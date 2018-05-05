@@ -114,14 +114,6 @@ perks = ["Adrenaline Rush",
     "You Thought I Was Down",
 ]
 
-def main():
-    while True:
-        print("Name:", names.get_full_name())
-        print("Trope 1:", random.choice(tropes))
-        print("Trope 2:", random.choice(tropes))
-        print("Perk:", random.choice(perks))
-        input()
-
 @app.route('/')
 def homepage():
     the_time = datetime.now()
@@ -135,21 +127,21 @@ def homepage():
     return """
     <html>
     <head>
-    <title>What the Fuck is my Straight to VHS Character?</title>
+        <title>What the Fuck is my Straight to VHS Character?</title>
     </head>
     <body>
-    <h1>What the fuck is my Straight to VHS Character?</h1>
-    <p>I am playing...</p>
-    <h2>{name}</h2>
-    <p>...whose two Tropes are...</p>
-    <ol>
-        <li><h2>{trope_1}</h2></li>
-        <li><h2>{trope_2}</h2></li>
-    </ol>
-    <p>...and whose Perk is...</p>
-    <ol>
-        <li><h2>{perk}</h2></li>
-    </ol>
+        <h1>What the fuck is my Straight to VHS Character?</h1>
+        <p>I am playing...</p>
+        <h2>{name}</h2>
+        <p>...whose two Tropes are...</p>
+        <ol>
+            <li><h2>{trope_1}</h2></li>
+            <li><h2>{trope_2}</h2></li>
+        </ol>
+        <p>...and whose Perk is...</p>
+        <ol>
+            <li><h2>{perk}</h2></li>
+        </ol>
     </body>
     </html>
     """.format(time=the_time, name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
