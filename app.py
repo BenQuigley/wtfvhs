@@ -116,7 +116,6 @@ perks = ["Adrenaline Rush",
 
 @app.route('/')
 def homepage():
-    the_time = datetime.now()
     name = names.get_full_name()
     trope_1 = random.choice(tropes)
     trope_2 = None
