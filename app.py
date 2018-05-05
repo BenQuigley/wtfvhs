@@ -143,7 +143,7 @@ def homepage():
         </ol>
     </body>
     </html>
-    """.format(time=the_time, name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
+    """.format(name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
