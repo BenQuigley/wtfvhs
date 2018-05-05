@@ -1,10 +1,8 @@
-from flask import Flask
-from datetime import datetime
-
-app = Flask(__name__)
-
+import flask
 import random
 import names
+
+app = flask.Flask(__name__)
 
 tropes = ["Batshit Crazy",
     "Batteries Included",
@@ -146,5 +144,5 @@ def homepage():
     """.format(name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=False, use_reloader=True)
 
