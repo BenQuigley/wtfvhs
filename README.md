@@ -6,7 +6,7 @@ About
 This site uses Flask, Bootstrap, and Heroku. Its source code is available here on Github, where you are
 welcome to contribute to it; pull requests and bug reports are welcome.
 
-The minimal "who is my character" format was stolen from the
+The minimal "who the fuck is my character" format was stolen from the
 [Who the fuck is my #DND character](http://www.whothefuckismydndcharacter.com/) generator
 by [Ryan Grant](https://twitter.com/ryanjgrant).
 
