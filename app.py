@@ -145,6 +145,8 @@ def homepage():
                 <li><h2>{perk} <small>(page {perk_page})</small></h2></li>
             </ol>
             <p>Not feeling it? <input type="button" value="Click here to refresh." onClick="window.location.reload()"></p>
+            <h3>About</h3>
+            <p class="small">Made with love by <a href="https://benquigley.github.io">Ben Quigley</a>.</p>
             <p class="small">This site uses Flask, Bootstrap, and Heroku. Its source code is available 
             <a href="https://github.com/BenQuigley/wtfvhs">here on Github</a>, where 
             you are welcome to contribute to it; pull requests and bug reports are welcome.</p>
@@ -154,7 +156,6 @@ def homepage():
             <p class="small"><a href="http://lostcatgames.com/">Straight to VHS</a> is published by Lost Cat Games, and this site is 
             published with their permission. The game is currently in open beta and is available for free on their web 
             site.</p>
-            <p class="small">Made with love by <a href="https://benquigley.github.io">>Ben Quigley</a>.</p>
         </div>
     </body>
     </html>
