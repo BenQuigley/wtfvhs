@@ -4,122 +4,126 @@ import names
 
 app = flask.Flask(__name__)
 
-tropes = ["Batshit Crazy",
-    "Batteries Included",
-    "Blind Master",
-    "Born Wild",
-    "Bravehearted",
-    "Bumbling Sidekick",
-    "Chesty",
-    "Coward",
-    "Crime Robber",
-    "Cyborg",
-    "Die Hardly",
-    "Doctor",
-    "Dual Wielding",
-    "Gangster",
-    "Gumshoe",
-    "Hobo",
-    "Jack Burtonesque",
-    "Know-It-All",
-    "Mad Scientist",
-    "Man/Woman of Action",
-    "Man/Woman of the Cloth",
-    "Martial Artist",
-    "Net Hacker",
-    "Ninja",
-    "Nosy Reporter",
-    "Old Geezer",
-    "Otherworldly",
-    "Paid Sponsor",
-    "Police Cop",
-    "Protagonist",
-    "Psychic Mindfreaker",
-    "Road Rash",
-    "Rock and Roller",
-    "Sentimentalist",
-    "Shredmeister",
-    "Snot-Nosed Brat",
-    "Sophisticated",
-    "Stoner",
-    "Survivalist",
-    "Talking Animal",
-    "Troubled Athlete",
-    "Vampire",
-    "Voodoo Master",
-    "Werewolf",
-    "Wheelman",
-    "Wrestler",
-]
+tropes = {"Batshit Crazy": 20,
+    "Batteries Included": 20,
+    "Blind Master": 21,
+    "Born Wild": 21,
+    "Bravehearted": 22,
+    "Bumbling Sidekick": 22,
+    "Chesty": 23,
+    "Coward": 23,
+    "Crime Robber": 23,
+    "Cyborg": 24,
+    "Die Hardly": 24,
+    "Doctor": 25,
+    "Dual Wielding": 25,
+    "Gangster": 26,
+    "Gumshoe": 26,
+    "Hobo": 27,
+    "Jack Burtonesque": 27,
+    "Know-It-All": 27,
+    "Mad Scientist": 28,
+    "Man/Woman of Action": 28,
+    "Man/Woman of the Cloth": 29,
+    "Martial Artist": 29,
+    "Net Hacker": 30,
+    "Ninja": 30,
+    "Nosy Reporter": 31,
+    "Old Geezer": 31,
+    "Otherworldly": 31,
+    "Paid Sponsor": 32,
+    "Police Cop": 32,
+    "Protagonist": 33,
+    "Psychic Mindfreaker": 33,
+    "Road Rash": 34,
+    "Rock and Roller": 34,
+    "Sentimentalist": 35,
+    "Shredmeister": 35,
+    "Snot-Nosed Brat": 36,
+    "Sophisticated": 36,
+    "Stoner": 37,
+    "Survivalist": 37,
+    "Talking Animal": 38,
+    "Troubled Athlete": 38,
+    "Vampire": 38,
+    "Voodoo Master": 39,
+    "Werewolf": 39,
+    "Wheelman": 40,
+    "Wrestler": 40}
 
-perks = ["Adrenaline Rush",
-    "Aspiring Script Writer",
-    "Calmly Walk Away",
-    "Crunch Time",
-    "Deceitful",
-    "Domino Strike",
-    "Dramatic Reval",
-    "Druid, or Possibly Farmer",
-    "Duct Tape and Solder",
-    "Eagle-Eyed",
-    "Elite Shooter",
-    "Evil Eye",
-    "Explosives Expert",
-    "Fight Me Like a Man",
-    "Float Like a Butterfly",
-    "Glancing Blows",
-    "Good Judge of Character",
-    "Hell of an Arm",
-    "High Five of Life",
-    "I'm Not Supposed to Die Like This",
-    "John Woo",
-    "Laser Focus",
-    "Leap of Faith",
-    "Masochistic",
-    "Mass Destruction",
-    "Master of Disguise",
-    "Mr. Roy Rodgers",
-    "My Body Is a Weapon",
-    "My Body Is Literally a Weapon",
-    "No Body, No Death",
-    "Noooo!",
-    "Payday",
-    "Photographic Memory",
-    "Point Blank",
-    "Push It Real Good",
-    "Ricochet",
-    "Sexual Tyrannosaurus",
-    "Sexy Nerd",
-    "Shock Absorber",
-    "Sleeper Hold",
-    "Smack-Talkin'",
-    "Small but Fierce",
-    "Speed of Plot",
-    "Spray and Pray",
-    "Still Breathing",
-    "The More The Merrier",
-    "Trenchcoat",
-    "Under the Radar",
-    "Warrior Training",
-    "Where's My Mark?",
-    "Why Didn't You Say So?",
-    "Wildcard",
-    "Winning Smile",
-    "Wire Work",
-    "Words of Wisdom",
-    "You Never Know",
-    "You Sick Sonavabitch",
-    "You Thought I Was Down",
-]
+perks = {"Adrenaline Rush": 41,
+    "Aspiring Script Writer": 41,
+    "Calmly Walk Away": 41,
+    "Crunch Time": 41,
+    "Deceitful": 41,
+    "Domino Strike": 41,
+    "Dramatic Reval": 41,
+    "Druid, or Possibly Farmer": 41,
+    "Duct Tape and Solder": 42,
+    "Eagle-Eyed": 42,
+    "Elite Shooter": 42,
+    "Evil Eye": 42,
+    "Explosives Expert": 42,
+    "Fight Me Like a Man": 42,
+    "Float Like a Butterfly": 42,
+    "Glancing Blows": 42,
+    "Good Judge of Character": 42,
+    "Hell of an Arm": 42,
+    "High Five of Life": 42,
+    "I'm Not Supposed to Die Like This": 43,
+    "John Woo": 43,
+    "Laser Focus": 43,
+    "Leap of Faith": 43,
+    "Masochistic": 43,
+    "Mass Destruction": 43,
+    "Master of Disguise": 43,
+    "Mr. Roy Rodgers": 43,
+    "My Body Is a Weapon": 43,
+    "My Body Is Literally a Weapon": 43,
+    "No Body, No Death": 44,
+    "Noooo!": 44,
+    "Payday": 44,
+    "Photographic Memory": 44,
+    "Point Blank": 44,
+    "Push It Real Good": 44,
+    "Ricochet": 44,
+    "Sexual Tyrannosaurus": 44,
+    "Sexy Nerd": 44,
+    "Shock Absorber": 45,
+    "Sleeper Hold": 45,
+    "Smack-Talkin'": 45,
+    "Small but Fierce": 45,
+    "Speed of Plot": 45,
+    "Spray and Pray": 45,
+    "Still Breathing": 45,
+    "The More The Merrier": 45,
+    "Trenchcoat": 46,
+    "Under the Radar": 45,
+    "Warrior Training": 45,
+    "Where's My Mark?": 45,
+    "Why Didn't You Say So?": 45,
+    "Wildcard": 45,
+    "Winning Smile": 45,
+    "Wire Work": 45,
+    "Words of Wisdom": 45,
+    "You Never Know": 45,
+    "You Sick Sonavabitch": 46,
+    "You Thought I Was Down": 46}
 
 @app.route('/')
 def homepage():
+    """
+    Create a character with a random name, two random tropes, and a random perk, with pagenumbers.
+    """
     name = names.get_full_name()
-    trope_1 = random.choice(tropes)
+    trope_1 = random.choice(list(tropes.keys()))
+    trope_1_page = tropes[trope_1]
     trope_2 = None
     while trope_2 is None or trope_2 == trope_1:
-        trope_2 = random.choice(tropes)
-    perk = random.choice(perks)
+        trope_2 = random.choice(list(tropes.keys()))
+    trope_2_page = tropes[trope_2]
+    perk = random.choice(list(perks.keys()))
+    perk_page = perks[perk]
     return """
     <html>
     <head>
@@ -133,12 +137,12 @@ def homepage():
             <h2>{name}</h2>
             <p>...whose two Tropes are...</p>
             <ol>
-                <li><h2>{trope_1}</h2></li>
-                <li><h2>{trope_2}</h2></li>
+                <li><h2>{trope_1} <small>(page {trope_1_page})</small></h2></li>
+                <li><h2>{trope_2} <small>(page {trope_2_page})</small></h2></li>
             </ol>
             <p>...and whose Perk is...</p>
             <ol>
-                <li><h2>{perk}</h2></li>
+                <li><h2>{perk} <small>(page {perk_page})</small></h2></li>
             </ol>
             <p class="small">This site uses Flask, Bootstrap, and Heroku. Its source code is available 
             <a href="https://github.com/BenQuigley/wtfvhs">here on Github</a>, where 
@@ -152,7 +156,8 @@ def homepage():
         </div>
     </body>
     </html>
-    """.format(name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
+    """.format(name=name, trope_1=trope_1, trope_1_page=trope_1_page, trope_2=trope_2, trope_2_page=trope_2_page,
+               perk=perk, perk_page=perk_page)
 
 if __name__ == '__main__':
     app.run(debug=False, use_reloader=True)
