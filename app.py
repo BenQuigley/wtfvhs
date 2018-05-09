@@ -143,8 +143,9 @@ def homepage():
             <p>This site uses Python, Flask, Bootstrap, and Heroku. Its source code is available 
             <a href="https://github.com/BenQuigley/wtfvhs">here on Github</a>, where 
             you are welcome to contribute to it; pull requests and bug reports are welcome.</p>
-            <p>The minimal "who is my character" format was inspired by the 
-            <a href="http://www.whothefuckismydndcharacter.com/">Who the fuck is my #DND character</a> generator.</p>
+            <p>The minimal "who is my character" format was stolen from the 
+            <a href="http://www.whothefuckismydndcharacter.com/">Who the fuck is my #DND character</a> generator by 
+            <a href="https://twitter.com/ryanjgrant">Ryan Grant</a>.</p>
             <p><a href="http://lostcatgames.com/">Straight to VHS</a> is published by Lost Cat Games, and this site is 
             published with their permission. The game is currently in open beta and is available for free on their web 
             site.</p>
