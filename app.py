@@ -144,7 +144,7 @@ def homepage():
             <ol>
                 <li><h2>{perk} <small>(page {perk_page})</small></h2></li>
             </ol>
-            <p>Not feeling it? <input type="button" value="Click here to refresh." onClick="window.location.reload()"></p>
+            <p>Not feeling it? <input type="button" value="Click here to refresh." onClick="window.location.href=window.location.href"></p>
             <h3>About</h3>
             <p class="small">Made with love by <a href="https://benquigley.github.io">Ben Quigley</a>.</p>
             <p class="small">This site uses Flask, Bootstrap, and Heroku. Its source code is available 
