@@ -120,25 +120,35 @@ def homepage():
     while trope_2 is None or trope_2 == trope_1:
         trope_2 = random.choice(tropes)
     perk = random.choice(perks)
-
     return """
     <html>
     <head>
-        <title>What the Fuck is my Straight to VHS Character?</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <title>Who the Fuck is my Straight to VHS Character?</title>
     </head>
     <body>
-        <h1>What the fuck is my Straight to VHS Character?</h1>
-        <p>I am playing...</p>
-        <h2>{name}</h2>
-        <p>...whose two Tropes are...</p>
-        <ol>
-            <li><h2>{trope_1}</h2></li>
-            <li><h2>{trope_2}</h2></li>
-        </ol>
-        <p>...and whose Perk is...</p>
-        <ol>
-            <li><h2>{perk}</h2></li>
-        </ol>
+        <div class="container"> 
+            <h1>Who the fuck is my Straight to VHS Character?</h1>
+            <p>I am playing...</p>
+            <h2>{name}</h2>
+            <p>...whose two Tropes are...</p>
+            <ol>
+                <li><h2>{trope_1}</h2></li>
+                <li><h2>{trope_2}</h2></li>
+            </ol>
+            <p>...and whose Perk is...</p>
+            <ol>
+                <li><h2>{perk}</h2></li>
+            </ol>
+            <p>This site uses Python, Flask, Bootstrap, and Heroku. Its source code is available 
+            <a href="https://github.com/BenQuigley/wtfvhs">here on Github</a>, where 
+            you are welcome to contribute to it; pull requests and bug reports are welcome.</p>
+            <p>The minimal "who is my character" format was inspired by the 
+            <a href="http://www.whothefuckismydndcharacter.com/">Who the fuck is my #DND character</a> generator.</p>
+            <p><a href="http://lostcatgames.com/">Straight to VHS</a> is published by Lost Cat Games, and this site is 
+            published with their permission. The game is currently in open beta and is available for free on their web 
+            site.</p>
+        </div>
     </body>
     </html>
     """.format(name=name, trope_1=trope_1, trope_2=trope_2, perk=perk)
