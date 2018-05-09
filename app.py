@@ -153,6 +153,7 @@ def homepage():
             <p class="small"><a href="http://lostcatgames.com/">Straight to VHS</a> is published by Lost Cat Games, and this site is 
             published with their permission. The game is currently in open beta and is available for free on their web 
             site.</p>
+            <p class="small">Made with love by <a href="https://benquigley.github.io">>Ben Quigley</a>.</p>
         </div>
     </body>
     </html>
