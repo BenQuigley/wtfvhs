@@ -144,6 +144,7 @@ def homepage():
             <ol>
                 <li><h2>{perk} <small>(page {perk_page})</small></h2></li>
             </ol>
+            <p>Not feeling it? <input type="button" value="Click here to refresh." onClick="window.location.reload()"></p>
             <p class="small">This site uses Flask, Bootstrap, and Heroku. Its source code is available 
             <a href="https://github.com/BenQuigley/wtfvhs">here on Github</a>, where 
             you are welcome to contribute to it; pull requests and bug reports are welcome.</p>
