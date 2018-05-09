@@ -3,7 +3,7 @@ Who the Fuck is my Straight to VHS Character?
 
 About
 -----
-This site uses Python, Flask, Bootstrap, and Heroku. Its source code is available here on Github, where you are
+This site uses Flask, Bootstrap, and Heroku. Its source code is available here on Github, where you are
 welcome to contribute to it; pull requests and bug reports are welcome.
 
 The minimal "who is my character" format was stolen from the
